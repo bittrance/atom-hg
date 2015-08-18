@@ -1,0 +1,43 @@
+{
+  "name": "atom-hg",
+  "main": "./lib/hg",
+  "version": "0.1.0",
+  "description": "Marks lines/files in the editor gutter/treeview that have been added, edited, or deleted since the last commit.",
+  "keywords": [
+    "mercurial",
+    "hg",
+    "vcs"
+  ],
+  "repository": "https://bitbucket.org/quest/atom-hg",
+  "license": "LGPL-3.0",
+  "engines": {
+    "atom": ">=0.200.0"
+  },
+  "dependencies": {
+    "deep-equal": "^1.0.0",
+    "diff": "^1.4.0",
+    "event-kit": "^1.2.0",
+    "hg": "^0.1.4",
+    "jsdiff": "^1.1.1"
+  },
+  "providedServices": {
+    "atom.repository-provider": {
+      "versions": {
+        "0.1.0": "getRepositoryProviderService"
+      }
+    }
+  },
+  "coffeelintConfig": {
+    "indentation": {
+      "level": "error",
+      "value": 4
+    },
+    "line_endings": {
+      "value": "unix",
+      "level": "error"
+    },
+    "max_line_length": {
+      "level": "ignore"
+    }
+  }
+}
